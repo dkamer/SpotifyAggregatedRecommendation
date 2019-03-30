@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<style>
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        background-color: black;
+    }
+    table{
+        width:100%;
+        height:100%;
+    }
+    tr{
+        border: 1px solid white;
+        height: 100%;
+        }
+    button{
+        border-radius: 12px;
+    }
+    .Refreshbutton {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    button:hover{
+        box-shadow: 0 2px 2px 0 
+            rgba(255,255,255,1), 
+            0 5px 5px 0
+            rgba(255,255,255,1);
+    }
+    th{
+        color: white;
+        width: 60px;
+    }
+    textheader{
+        font-size: 15px;
+        color: white;
+    }
+    text{
+        font-size: 10px;
+        color: white;
+    }
+    header{
+        color: white;
+    }   
+   
+</style>
+
+<html>
+    <table>
+        <tr>
+            <th>
+                Andre (25Yrs)
+            </th>
+             <th>
+                 Erik (32Yrs)
+            </th>
+             <th>
+                 John (17Yrs)
+            </th>
+             <th>
+                 Melissa (21Yrs)
+            </th>
+             <th>
+                 Chels (28Yrs)
+            </th>
+        </tr>
+        <tr>
+            <th style="height:350px">
+<div class='embed-container'>
+<iframe id='User1'
+src='https://embed.spotify.com/?uri=spotify:track:0zjB7ewBWnMgQDMQpFzt92'
+frameborder='0' allowtransparency='true'></iframe>
+    </div>
+            </th>
+            <th style="height:350px">
+    <div class='embed-container'>
+<iframe id='User2'
+src='https://embed.spotify.com/?uri=spotify:track:2GZbJjsph5LKA0reVwefxH'
+frameborder='0' allowtransparency='true'></iframe>
+    </div>
+            </th>
+            <th style="height:350px">
+    <div class='embed-container'>
+<iframe id='User3'
+src='https://embed.spotify.com/?uri=spotify:track:2rxQMGVafnNaRaXlRMWPde'
+frameborder='0' allowtransparency='true'></iframe>
+    </div>
+            </th>
+            <th style="height:350px">
+    <div class='embed-container'>
+<iframe id='User4'
+src='https://embed.spotify.com/?uri=spotify:track:3aW0ds4A4tSQDIp75FqWTo'
+frameborder='0' allowtransparency='true'></iframe>
+    </div>
+            </th>
+            <th style="height:350px">
+    <div class='embed-container'>
+<iframe id='User5'
+src='https://embed.spotify.com/?uri=spotify:track:3KkXRkHbMCARz0aVfEt68P'
+frameborder='0' allowtransparency='true'></iframe>
+    </div>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <textheader>
+                Recent Played Tracks:
+                </textheader>
+                <text>
+                <br> Ariana Grande - Thank u, next
+                <br> Mark Ronson - Nothing Breaks Like a Heart
+                <br> Sam Smith - Dancing with a Stranger
+                </text>
+            </th>
+             <th>
+                <textheader>
+                Recent Played Tracks:
+                </textheader>
+                <text>
+                 <br> Truckfighters - Momentum
+                 <br> Truckfighters - Atomic
+                 <br> Truckfighters - Slides
+                </text>
+            </th>
+             <th>
+                <textheader>
+                Recent Played Tracks:
+                </textheader>
+                <text>
+                 <br> Chris Young - Hangin' on
+                 <br> Hall and Oates - Maneater
+                 <br> Steve Perry - Oh Sherrie
+                </text>
+            </th>
+             <th>
+                <textheader>
+                Recent Played Tracks:
+                </textheader>
+                <text>
+                 <br> Steve Aoki - Waste it on me
+                 <br> RM - Forever rain
+                 <br> BTS - IDOL
+                </text>
+            </th>
+             <th>
+                <textheader>
+                Recent Played Tracks:
+                </textheader>
+                <text>
+                 <br> HyFy - Crazy love
+                 <br> Kalvon - Heartbeat
+                 <br> CVBZ - Be somebody
+                </text>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button onclick='SearchUser1()'>
+    Next Song
+</button>
+            </th>
+             <th>
+                 <button onclick='SearchUser2()'>
+    Next Song
+</button>
+            </th>
+             <th>
+                 <button onclick='SearchUser3()'>
+    Next Song
+</button>
+            </th>
+             <th>
+                 <button onclick='SearchUser4()'>
+    Next Song
+</button>
+            </th>
+             <th>
+                 <button onclick='SearchUser5()'>
+    Next Song
+</button>
+            </th>
+        </tr>
+    </table>
+<br>
+    
+    <button class="Refreshbutton" onClick="RecommendationList()">
+        Recommendation List
+    </button>
+    
+    <button class="Refreshbutton" value="Refresh Page" onClick="window.location.reload()">
+        Refresh
+    </button>
+    
+<script>
+function SearchUser1() {document.getElementById('User1').src='https://embed.spotify.com/?uri=spotify:track:14msK75pk3pA33pzPVNtBF';}
+function SearchUser2() {document.getElementById('User2').src='https://embed.spotify.com/?uri=spotify:track:14msK75pk3pA33pzPVNtBF';}
+function SearchUser3() {document.getElementById('User3').src='https://embed.spotify.com/?uri=spotify:track:14msK75pk3pA33pzPVNtBF';}
+function SearchUser4() {document.getElementById('User4').src='https://embed.spotify.com/?uri=spotify:track:14msK75pk3pA33pzPVNtBF';}
+function SearchUser5() {document.getElementById('User5').src='https://embed.spotify.com/?uri=spotify:track:14msK75pk3pA33pzPVNtBF';}
+function RecommendationList() 
+    {document.getElementById('User1').src= 'https://embed.spotify.com/?uri=spotify:playlist:37i9dQZEVXbMDoHDwVN2tF';
+     document.getElementById('User2').src='https://embed.spotify.com/?uri=spotify:playlist:37i9dQZEVXbMDoHDwVN2tF';
+     document.getElementById('User3').src='https://embed.spotify.com/?uri=spotify:playlist:37i9dQZEVXbMDoHDwVN2tF';
+     document.getElementById('User4').src='https://embed.spotify.com/?uri=spotify:playlist:37i9dQZEVXbMDoHDwVN2tF';
+     document.getElementById('User5').src='https://embed.spotify.com/?uri=spotify:playlist:37i9dQZEVXbMDoHDwVN2tF';}
+    </script>
+<br>
+</html>
